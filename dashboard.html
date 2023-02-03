@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Dashboard - Power Products Uganda Ltd</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="less/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@300;400;600&family=Teko:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="admin-dashboard">
+      <div class="dashboard">
+        <div class="dashboard-nav">
+          <header>
+            <a href="#!" class="menu-toggle"><i class="bi bi-list"></i></a>
+            <a href="index.html" class="brand-logo">
+              <img
+                src="images/logo.png"
+                class="img-fluid"
+                alt="Power Products Uganda"
+              />
+            </a>
+          </header>
+
+          <nav class="dashboard-nav-list">
+            <ul class="clearfix acc">
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-house nav-link">Home</a></li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-speedometer2 nav-link">Dashboard</a></li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-plus-circle nav-link">Add new product</a></li>
+              <li class="nav-item menu-item--expanded acc__card">
+                  <span class="bi bi-grid nav-link nav-link- acc__title" title="manage">Manage Products</span>
+                  <ul class="menu acc__panel">
+                    <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Published products</a></li>
+                    <li class="nav-item"><a href="#" class="bi bi-book nav-link">Unpublished products</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-file-text nav-link">Manage pages</a></li>
+              <li class="nav-item menu-item--expanded acc__card">
+                  <span class="bi bi-view-list nav-link nav-link- acc__title" title="manage">Manage Categories</span>
+                  <ul class="menu acc__panel">
+                    <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Brands</a></li>
+                      <li class="nav-item"><a href="#" class="bi bi-book nav-link">Product categories</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-bag-check nav-link">Order requests</a></li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-box-arrow-right nav-link">Logout</a></li>
+              <li class="nav-item"><a href="dashboard.html" class="bi bi-people nav-link">Users</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="dashboard-app">
+          <header class="dashboard-toolbar">
+            <a href="#!" class="menu-toggle"><i class="bi bi-list"></i></a>
+          </header>
+
+          <div class="dashboard-content px-md-5 mt-5">
+            <div class="container">
+              <h3>Dashboard</h3>
+              <div class="row stats-wrapper">
+                <div class="col-md-4">
+                  <div
+                    class="d-flex stats-wrapp bg-white p-4 rounded-3 mb-md-0 mb-4"
+                  >
+                    <div class="align-self-center">
+                      <i class="bi bi-box"></i>
+                    </div>
+                    <div class="ms-4">
+                      <div class="stat-title">Number of products</div>
+                      <h2>355</h2>
+                      <a href="#">manage products</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="d-flex stats-wrapp bg-white p-4 rounded-3 mb-md-0 mb-4"
+                  >
+                    <div class="align-self-center">
+                      <i class="bi bi-cart-check"></i>
+                    </div>
+                    <div class="ms-4">
+                      <div class="stat-title">New Orders</div>
+                      <h2>355</h2>
+                      <a href="#">manage orders</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="d-flex stats-wrapp bg-white p-4 rounded-3 mb-md-0 mb-4"
+                  >
+                    <div class="align-self-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ms-4">
+                      <div class="stat-title">New users</div>
+                      <h2>355</h2>
+                      <a href="#">manage users</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-5 top-sellers">
+                <h3>Top SeIIing Products</h3>
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/lc-5000dc-1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/lc-5000dc-3.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#"> SDMO HX 2500</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HD9-23De.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#"> honda 10I</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/BD50-60CEpCLASSIC.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">ELEMAX SH 3900cx</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HD8-23GClassic.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/403A-11G-PK-10.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">SDMO HX 2500</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HS-6500-3E.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda 10I</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/EG-6500EX.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">ELEMAX SH 3900cx</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/403A-11G-PK-10.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HS-6500-3E.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HS-6500-3E.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img
+                        src="images/HD9-23De.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <h5><a href="#">honda EP 2500CX</a></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="recent-orders-wrapper bg-white rounded-3 my-5 px-5 py-5"
+              >
+                <h3>Recent Orders</h3>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Image</th>
+                      <th scope="col">Product name</th>
+                      <th scope="col">Product ID</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Stock Status</th>
+                      <th scope="col">edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>EIemax SH 3900cx</td>
+                      <td>00200105</td>
+                      <td>Delivered</td>
+                      <td class="">Out of Stock</td>
+                      <td>edit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Honda EP 2500cx</td>
+                      <td>00200102</td>
+                      <td>Pending</td>
+                      <td>In Stock</td>
+                      <td>edit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Honda 101</td>
+                      <td>00200103</td>
+                      <td>Confirmed</td>
+                      <td>In Stock</td>
+                      <td>edit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>EIemax SH 3900cx</td>
+                      <td>00200105</td>
+                      <td>Delivered</td>
+                      <td>Out of Stock</td>
+                      <td>edit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Honda EP 2500cx</td>
+                      <td>00200102</td>
+                      <td>Pending</td>
+                      <td>In Stock</td>
+                      <td>edit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Honda 101</td>
+                      <td>00200103</td>
+                      <td>Confirmed</td>
+                      <td>In Stock</td>
+                      <td>edit</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
+</html>
+
+<script>
+  const mobileScreen = window.matchMedia("(max-width: 990px )");
+  $(document).ready(function () {
+    $(".dashboard-nav-dropdown-toggle").click(function () {
+      $(this)
+        .closest(".dashboard-nav-dropdown")
+        .toggleClass("show")
+        .find(".dashboard-nav-dropdown")
+        .removeClass("show");
+      $(this).parent().siblings().removeClass("show");
+    });
+    $(".menu-toggle").click(function () {
+      if (mobileScreen.matches) {
+        $(".dashboard-nav").toggleClass("mobile-show");
+      } else {
+        $(".dashboard").toggleClass("dashboard-compact");
+      }
+    });
+  });
+
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      1: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+
+  $(function () {
+    $(".acc__title").click(function (j) {
+        var dropDown = $(this).closest(".acc__card").find(".acc__panel");
+        $(this).closest(".acc").find(".acc__panel").not(dropDown).slideUp();
+  
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        }
+        else {
+            $(this).closest(".acc").find(".acc__title.active").removeClass("active");
+            $(this).addClass("active");
+        }
+  
+        dropDown.stop(false, true).slideToggle();
+        j.preventDefault();
+    });
+  });
+</script>

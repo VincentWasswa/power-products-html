@@ -1,0 +1,3151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Dashboard - Power Products Uganda Ltd</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@300;400;600&family=Teko:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="admin-dashboard">
+      <div class="dashboard">
+        <div class="dashboard-nav">
+          <header>
+            <a href="#!" class="menu-toggle"><i class="bi bi-list"></i></a>
+            <a href="index.html" class="brand-logo">
+              <img
+                src="images/logo.png"
+                class="img-fluid"
+                alt="Power Products Uganda"
+              />
+            </a>
+          </header>
+
+          <hr />
+          <ul class="clearfix acc">
+            <li class="nav-item">
+              <a
+                href="/"
+                class="bi bi-house nav-link nav-link- acc__title-"
+                data-drupal-link-system-path="<front>"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/dashboard"
+                class="bi bi-speedometer2 nav-link nav-link- acc__title-dashboard"
+                data-drupal-link-system-path="dashboard"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/node/add"
+                class="bi bi-plus-circle nav-link nav-link- acc__title-node-add"
+                data-drupal-link-system-path="node/add"
+                >Add New Product</a
+              >
+            </li>
+            <li class="nav-item menu-item--active-trail">
+              <a
+                href="/dashboard/products"
+                class="bi bi-grid nav-link active nav-link- acc__title-dashboard-products is-active"
+                data-drupal-link-system-path="dashboard/products"
+                >Manage Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/dashboard/pages"
+                class="bi bi-file-text nav-link nav-link- acc__title-dashboard-pages"
+                data-drupal-link-system-path="dashboard/pages"
+                >Manage Pages</a
+              >
+            </li>
+            <li class="nav-item menu-item--expanded acc__card">
+              <a
+                href="/dashboard/terms"
+                class="bi bi-tags nav-link nav-link- acc__title-dashboard-terms"
+                data-drupal-link-system-path="dashboard/terms"
+                >Manage Categories</a
+              >
+              <ul class="menu acc__panel">
+                <li class="nav-item">
+                  <a
+                    href="/"
+                    class="nav-link nav-link- acc__title-"
+                    data-drupal-link-system-path="<front>"
+                    >Brands</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/"
+                    class="nav-link nav-link- acc__title-"
+                    data-drupal-link-system-path="<front>"
+                    >Product Categories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/dashboard/orders"
+                class="bi bi-bag-check nav-link nav-link- acc__title-dashboard-orders"
+                data-drupal-link-system-path="dashboard/orders"
+                >Order Requests</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/user/logout"
+                class="bi bi-box-arrow-right nav-link nav-link- acc__title-user-logout"
+                data-drupal-link-system-path="user/logout"
+                >Logout</a
+              >
+            </li>
+          </ul>
+          <hr />
+          <nav class="dashboard-nav-list">
+            <a href="index.html" class="dashboard-nav-item"
+              ><i class="bi bi-house"></i>Home
+            </a>
+            <a href="dashboard.html" class="dashboard-nav-item active"
+              ><i class="bi bi-speedometer2"></i>Dashboard</a
+            >
+            <a href="add-product.html" class="dashboard-nav-item"
+              ><i class="bi bi-plus-circle"></i> Add Product</a
+            >
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="bi bi-grid"></i> Manage Products</a
+              >
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item">Add New</a>
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >Edit Products</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item">Categories</a>
+                <a href="#" class="dashboard-nav-dropdown-item">New products</a>
+              </div>
+            </div>
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="bi bi-bag-check"></i>Orders</a
+              >
+
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >Recent Orders</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item">New</a>
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >Make an Order</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item">Banned</a>
+                <a href="#" class="dashboard-nav-dropdown-item">New</a>
+              </div>
+            </div>
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="bi bi-people"></i>Users</a
+              >
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item">Add user</a>
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >Edit accoutns</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item">Delete User</a>
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >Export User Info</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item">
+                  Pending Approval</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item"
+                  >User Activity</a
+                >
+                <a href="#" class="dashboard-nav-dropdown-item"> Blocked</a>
+              </div>
+            </div>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="bi bi-pie-chart"></i> Reports
+            </a>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="bi bi-chat-left"></i> Messages
+            </a>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="bi bi-sliders"></i> Settings
+            </a>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="bi bi-person"></i> Profile
+            </a>
+            <div class="nav-item-divider"></div>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="bi bi-box-arrow-right"></i> Logout
+            </a>
+          </nav>
+        </div>
+
+        <div class="dashboard-app">
+          <header class="dashboard-toolbar">
+            <a href="#!" class="menu-toggle"><i class="bi bi-list"></i></a>
+          </header>
+
+          <div class="dashboard-content px-md-5">
+            <div class="container">
+              <!-- THEME DEBUG -->
+              <!-- THEME HOOK: 'region' -->
+              <!-- FILE NAME SUGGESTIONS:
+   x region--nowrap.html.twig
+   * region--content.html.twig
+   * region.html.twig
+-->
+              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
+              <div data-drupal-messages-fallback="" class="hidden"></div>
+
+              <!-- THEME DEBUG -->
+              <!-- THEME HOOK: 'block' -->
+              <!-- FILE NAME SUGGESTIONS:
+     x block--power-content.html.twig
+     * block--system-main-block.html.twig
+     * block--system.html.twig
+     * block.html.twig
+  -->
+              <!-- BEGIN OUTPUT from 'themes/custom/power/templates/block/block--power-content.html.twig' -->
+
+              <!-- THEME DEBUG -->
+              <!-- THEME HOOK: 'container' -->
+              <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+              <!-- THEME DEBUG -->
+              <!-- THEME HOOK: 'views_view' -->
+              <!-- BEGIN OUTPUT from 'themes/custom/power/templates/views/views-view.html.twig' -->
+              <div
+                class="bg-white my-5 px-5 py-5 view view-admin-content view-id-admin_content view-display-id-admin_content js-view-dom-id-126fa8b87d414b0330a72055eb3af4064b8f8a75c92cc2112fb465812d2feaf2"
+              >
+                <div class="view-header">Displaying 1 - 30 of 210</div>
+                <div class="view-filters">
+                  <!-- THEME DEBUG -->
+                  <!-- THEME HOOK: 'form' -->
+                  <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+
+                  <form
+                    class="views-exposed-form"
+                    data-drupal-selector="views-exposed-form-admin-content-admin-content"
+                    action="/dashboard/products"
+                    method="get"
+                    id="views-exposed-form-admin-content-admin-content"
+                    accept-charset="UTF-8"
+                  >
+                    <!-- THEME DEBUG -->
+                    <!-- THEME HOOK: 'views_exposed_form' -->
+                    <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-exposed-form.html.twig' -->
+                    <div class="form-row">
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'form_element' -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <fieldset
+                        class="js-form-item js-form-type-cshs form-type-cshs js-form-item-type form-item-type mb-3"
+                      >
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'form_element_label' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+                        <label for="edit-type">Type</label>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'cshs' -->
+                        <!-- BEGIN OUTPUT from 'modules/contrib/cshs/templates/cshs.html.twig' -->
+                        <select
+                          data-drupal-selector="edit-type"
+                          class="simpler-select-root form-element form-element--type-select form-select"
+                          id="edit-type"
+                          name="type"
+                          style="display: none"
+                        >
+                          <option
+                            value="All"
+                            data-parent=""
+                            selected="selected"
+                          >
+                            - Please select -
+                          </option>
+                          <optgroup label="Type / Category">
+                            <option value="62" data-parent="">
+                              Automotive Service Equipment
+                            </option>
+                            <option value="89" data-parent="62">
+                              Battery Chargers
+                            </option>
+                            <option value="63" data-parent="62">
+                              Grease Guns
+                            </option>
+                            <option value="67" data-parent="62">Jacks</option>
+                            <option value="66" data-parent="62">
+                              Lifting Table
+                            </option>
+                            <option value="64" data-parent="62">
+                              Tyre Changers
+                            </option>
+                            <option value="65" data-parent="62">
+                              Wheel Balancers
+                            </option>
+                            <option value="88" data-parent="62">
+                              Air Compressors
+                            </option>
+                            <option value="34" data-parent="">
+                              Water Pumps
+                            </option>
+                            <option value="38" data-parent="34">
+                              PTO Pumps
+                            </option>
+                            <option value="35" data-parent="34">
+                              Engine Driven Pumps
+                            </option>
+                            <option value="36" data-parent="34">
+                              Electric Pumps
+                            </option>
+                            <option value="37" data-parent="34">
+                              Solar Pumps
+                            </option>
+                            <option value="72" data-parent="">
+                              Handling Equipment
+                            </option>
+                            <option value="76" data-parent="72">
+                              Electric Stacker
+                            </option>
+                            <option value="74" data-parent="72">
+                              Scissor Lifts
+                            </option>
+                            <option value="73" data-parent="72">
+                              Manual Pallet Truck
+                            </option>
+                            <option value="75" data-parent="72">
+                              Manual Pallet Stacker
+                            </option>
+                            <option value="102" data-parent="72">
+                              Weighing Scales
+                            </option>
+                            <option value="31" data-parent="">
+                              Power Equipment
+                            </option>
+                            <option value="77" data-parent="31">
+                              Silent Petrol Generator
+                            </option>
+                            <option value="32" data-parent="31">
+                              Petrol Generator
+                            </option>
+                            <option value="33" data-parent="31">
+                              Diesel Generator
+                            </option>
+                            <option value="39" data-parent="">
+                              Garden Equipment
+                            </option>
+                            <option value="46" data-parent="39">
+                              Hose Reel Irrigation System
+                            </option>
+                            <option value="40" data-parent="39">
+                              Lawnmower
+                            </option>
+                            <option value="44" data-parent="39">
+                              Mist Blowers
+                            </option>
+                            <option value="41" data-parent="39">
+                              Brush Cutters
+                            </option>
+                            <option value="42" data-parent="39">
+                              Power Saw
+                            </option>
+                            <option value="43" data-parent="39">
+                              Sprayers
+                            </option>
+                            <option value="45" data-parent="39">
+                              Fogging Machines
+                            </option>
+                            <option value="17" data-parent="">
+                              Cleaning Equipment
+                            </option>
+                            <option value="29" data-parent="17">
+                              Detergents
+                            </option>
+                            <option value="30" data-parent="17">
+                              Accessories
+                            </option>
+                            <option value="20" data-parent="17">
+                              Pressure Cleaner
+                            </option>
+                            <option value="21" data-parent="17">
+                              Vacuum Cleaner
+                            </option>
+                            <option value="27" data-parent="17">
+                              Floor Scrubber / Scrubber Drier
+                            </option>
+                            <option value="22" data-parent="17">
+                              Carpet Cleaner
+                            </option>
+                            <option value="24" data-parent="17">
+                              Steam Cleaner
+                            </option>
+                            <option value="47" data-parent="">
+                              Construction Equipment
+                            </option>
+                            <option value="105" data-parent="47">
+                              Angle Grinders
+                            </option>
+                            <option value="57" data-parent="47">
+                              Airless Paint Sprayer
+                            </option>
+                            <option value="97" data-parent="47">
+                              Concrete Cutters
+                            </option>
+                            <option value="48" data-parent="47">
+                              Compactors
+                            </option>
+                            <option value="51" data-parent="47">
+                              Concrete / Asphalt Saws
+                            </option>
+                            <option value="55" data-parent="47">
+                              Concrete Mixers
+                            </option>
+                            <option value="104" data-parent="47">
+                              Drilling Machines
+                            </option>
+                            <option value="49" data-parent="47">
+                              Drum Rollers
+                            </option>
+                            <option value="56" data-parent="47">Hoists</option>
+                            <option value="54" data-parent="47">
+                              Plastering Machines
+                            </option>
+                            <option value="94" data-parent="47">Pokers</option>
+                            <option value="53" data-parent="47">
+                              Power Screed
+                            </option>
+                            <option value="52" data-parent="47">
+                              Power Trowels
+                            </option>
+                            <option value="50" data-parent="47">Rammers</option>
+                            <option value="61" data-parent="47">
+                              Scarifiers
+                            </option>
+                            <option value="59" data-parent="47">
+                              Trush Pumps
+                            </option>
+                            <option value="60" data-parent="47">
+                              UHP Cleaners
+                            </option>
+                            <option value="58" data-parent="47">
+                              Vibrators
+                            </option>
+                            <option value="68" data-parent="">
+                              Engines &amp; Mortars
+                            </option>
+                            <option value="69" data-parent="68">
+                              Petro Engines
+                            </option>
+                            <option value="70" data-parent="68">
+                              Deseil Engines
+                            </option>
+                            <option value="71" data-parent="68">
+                              Electric Mortars
+                            </option>
+                          </optgroup>
+                        </select>
+                        <div
+                          class="select-wrapper select-wrapper--level-0"
+                          data-level="0"
+                        >
+                          <select
+                            class="simpler-select form-element form-element--type-select form-select"
+                            id="edit-type--level-0"
+                          >
+                            <option value="All">- Please select -</option>
+                            <option value="62" class="has-children">
+                              Automotive Service Equipment
+                            </option>
+                            <option value="34" class="has-children">
+                              Water Pumps
+                            </option>
+                            <option value="72" class="has-children">
+                              Handling Equipment
+                            </option>
+                            <option value="31" class="has-children">
+                              Power Equipment
+                            </option>
+                            <option value="39" class="has-children">
+                              Garden Equipment
+                            </option>
+                            <option value="17" class="has-children">
+                              Cleaning Equipment
+                            </option>
+                            <option value="47" class="has-children">
+                              Construction Equipment
+                            </option>
+                            <option value="68" class="has-children">
+                              Engines &amp; Mortars
+                            </option>
+                          </select>
+                        </div>
+
+                        <!-- END OUTPUT from 'modules/contrib/cshs/templates/cshs.html.twig' -->
+                      </fieldset>
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'form_element' -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <fieldset
+                        class="js-form-item js-form-type-select form-type-select js-form-item-brand form-item-brand mb-3"
+                      >
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'form_element_label' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+                        <label for="edit-brand">Brand</label>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'select' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+
+                        <select
+                          data-drupal-selector="edit-brand"
+                          id="edit-brand"
+                          name="brand"
+                          class="form-select"
+                        >
+                          <option value="All" selected="selected">
+                            - Any -
+                          </option>
+                          <option value="2">Abac</option>
+                          <option value="1">Airmec</option>
+                          <option value="99">Camry</option>
+                          <option value="3">Corghi</option>
+                          <option value="87">Echo</option>
+                          <option value="4">Elemax</option>
+                          <option value="93">Fastverdini</option>
+                          <option value="95">Hanatek</option>
+                          <option value="5">Honda</option>
+                          <option value="91">Jiang Dong</option>
+                          <option value="6">Karcher</option>
+                          <option value="7">Kipor</option>
+                          <option value="8">Koshin</option>
+                          <option value="9">Kubota</option>
+                          <option value="11">Linosella</option>
+                          <option value="12">Lister Petter</option>
+                          <option value="10">Loncin</option>
+                          <option value="101">Makita</option>
+                          <option value="98">Nagata</option>
+                          <option value="13">Perkins</option>
+                          <option value="100">Pramac</option>
+                          <option value="96">Robin</option>
+                          <option value="15">SDMO</option>
+                          <option value="14">Speroni</option>
+                          <option value="90">Telwin</option>
+                          <option value="16">Thakita</option>
+                          <option value="92">Toku</option>
+                        </select>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+                      </fieldset>
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'form_element' -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <fieldset
+                        class="js-form-item js-form-type-select form-type-select js-form-item-items-per-page form-item-items-per-page mb-3"
+                      >
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'form_element_label' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+                        <label for="edit-items-per-page">Items per page</label>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'select' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+
+                        <select
+                          data-drupal-selector="edit-items-per-page"
+                          id="edit-items-per-page"
+                          name="items_per_page"
+                          class="form-select"
+                        >
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="30" selected="selected">30</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                        </select>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+                      </fieldset>
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'container' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__submit' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--submit.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        data-drupal-selector="edit-submit-admin-content"
+                        type="submit"
+                        id="edit-submit-admin-content"
+                        value="Filter"
+                        class="button js-form-submit form-submit btn btn-primary form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+                    </div>
+
+                    <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-exposed-form.html.twig' -->
+                  </form>
+
+                  <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+                </div>
+
+                <div class="view-content row">
+                  <div class="views-form">
+                    <!-- THEME DEBUG -->
+                    <!-- THEME HOOK: 'form' -->
+                    <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+
+                    <form
+                      data-drupal-selector="views-form-admin-content-admin-content"
+                      action="/dashboard/products"
+                      method="post"
+                      id="views-form-admin-content-admin-content"
+                      accept-charset="UTF-8"
+                    >
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'container' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'container' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'form_element' -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <fieldset
+                        class="js-form-item js-form-type-select form-type-select js-form-item-action form-item-action mb-3"
+                      >
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'form_element_label' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+                        <label for="edit-action">Action</label>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'select' -->
+                        <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+
+                        <select
+                          data-drupal-selector="edit-action"
+                          id="edit-action"
+                          name="action"
+                          class="form-select"
+                        >
+                          <option value="node_delete_action">
+                            Delete content
+                          </option>
+                          <option value="node_publish_action">
+                            Publish content
+                          </option>
+                          <option value="node_unpublish_action">
+                            Unpublish content
+                          </option>
+                          <option value="pathauto_update_alias_node">
+                            Update URL alias
+                          </option>
+                        </select>
+                        <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/select.html.twig' -->
+                      </fieldset>
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'container' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__submit' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--submit.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        data-drupal-selector="edit-submit"
+                        type="submit"
+                        id="edit-submit--2"
+                        name="op"
+                        value="Apply to selected items"
+                        class="button js-form-submit form-submit btn btn-primary form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'views_view_table' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/views/views-view-table.html.twig' -->
+                      <table
+                        class="table views-table views-view-table cols-4"
+                        data-once="table-select"
+                      >
+                        <thead>
+                          <tr>
+                            <th class="select-all" scope="col">
+                              <input
+                                type="checkbox"
+                                class="form-checkbox"
+                                title="Select all rows in this table"
+                              />
+                            </th>
+                            <th id="view-title-table-column" scope="col">
+                              Product Name
+                            </th>
+                            <th id="view-field-brand-table-column" scope="col">
+                              Brand
+                            </th>
+                            <th id="view-edit-node-table-column" scope="col">
+                              Operation
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-0 form-item-node-bulk-form-0 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-0"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-0"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-0"
+                                  name="node_bulk_form[0]"
+                                  value="WyJlbiIsIjIyMiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/angle-grinders/ga9020-angle-grinder"
+                                hreflang="en"
+                                >GA9020 ANGLE GRINDER</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Makita
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/222/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-1 form-item-node-bulk-form-1 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-1"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-1"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-1"
+                                  name="node_bulk_form[1]"
+                                  value="WyJlbiIsIjIyMSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/drilling-machines/makita-hr2470-drilling-machine"
+                                hreflang="en"
+                                >MAKITA HR2470 DRILLING MACHINE</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Makita
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/221/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-2 form-item-node-bulk-form-2 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-2"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-2"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-2"
+                                  name="node_bulk_form[2]"
+                                  value="WyJlbiIsIjIyMCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/drilling-machines/makita-hp1630k-drilling-machine"
+                                hreflang="en"
+                                >MAKITA HP1630K DRILLING MACHINE</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Makita
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/220/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-3 form-item-node-bulk-form-3 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-3"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-3"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-3"
+                                  name="node_bulk_form[3]"
+                                  value="WyJlbiIsIjIxOSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/wl-hy-150-scale-150kg"
+                                hreflang="en"
+                                >WL-HY-150 SCALE 150KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/219/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-4 form-item-node-bulk-form-4 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-4"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-4"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-4"
+                                  name="node_bulk_form[4]"
+                                  value="WyJlbiIsIjIxOCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/table-scale-pole-30kg"
+                                hreflang="en"
+                                >TABLE SCALE WITH POLE 30KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/218/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-5 form-item-node-bulk-form-5 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-5"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-5"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-5"
+                                  name="node_bulk_form[5]"
+                                  value="WyJlbiIsIjIxNyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/dt-612-160kg"
+                                hreflang="en"
+                                >DT-612 160KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/217/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-6 form-item-node-bulk-form-6 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-6"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-6"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-6"
+                                  name="node_bulk_form[6]"
+                                  value="WyJlbiIsIjIxNiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/br3010-180kg"
+                                hreflang="en"
+                                >BR3010 180KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/216/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-7 form-item-node-bulk-form-7 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-7"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-7"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-7"
+                                  name="node_bulk_form[7]"
+                                  value="WyJlbiIsIjIxNSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/platform-scale-digital-150kg"
+                                hreflang="en"
+                                >PLATFORM SCALE DIGITAL 150KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/215/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-8 form-item-node-bulk-form-8 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-8"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-8"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-8"
+                                  name="node_bulk_form[8]"
+                                  value="WyJlbiIsIjIxNCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/platform-scale-digital-300kg"
+                                hreflang="en"
+                                >PLATFORM SCALE DIGITAL 300KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/214/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-9 form-item-node-bulk-form-9 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-9"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-9"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-9"
+                                  name="node_bulk_form[9]"
+                                  value="WyJlbiIsIjIxMyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/dial-platform-scale-500kg"
+                                hreflang="en"
+                                >DIAL PLATFORM SCALE 500KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/213/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-10 form-item-node-bulk-form-10 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-10"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-10"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-10"
+                                  name="node_bulk_form[10]"
+                                  value="WyJlbiIsIjIxMiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/hy-500-camry-dial-scale-r3-500kg"
+                                hreflang="en"
+                                >HY-500 CAMRY DIAL SCALE R3 500KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/212/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-11 form-item-node-bulk-form-11 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-11"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-11"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-11"
+                                  name="node_bulk_form[11]"
+                                  value="WyJlbiIsIjIxMSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/hy-150-digital-scale-150kg"
+                                hreflang="en"
+                                >HY-150 DIGITAL SCALE 150KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/211/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-12 form-item-node-bulk-form-12 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-12"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-12"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-12"
+                                  name="node_bulk_form[12]"
+                                  value="WyJlbiIsIjIxMCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/acs-30-scale-30kg"
+                                hreflang="en"
+                                >ACS-30 SCALE 30KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Camry
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/210/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-13 form-item-node-bulk-form-13 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-13"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-13"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-13"
+                                  name="node_bulk_form[13]"
+                                  value="WyJlbiIsIjIwOSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/digital-table-scale-300kg"
+                                hreflang="en"
+                                >DIGITAL TABLE SCALE 300KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/209/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-14 form-item-node-bulk-form-14 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-14"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-14"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-14"
+                                  name="node_bulk_form[14]"
+                                  value="WyJlbiIsIjIwNyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/digital-table-scale-500kg"
+                                hreflang="en"
+                                >DIGITAL TABLE SCALE 500KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/207/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-15 form-item-node-bulk-form-15 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-15"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-15"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-15"
+                                  name="node_bulk_form[15]"
+                                  value="WyJlbiIsIjIwNiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/platform-scale-300kg"
+                                hreflang="en"
+                                >PLATFORM SCALE 300KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/206/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-16 form-item-node-bulk-form-16 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-16"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-16"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-16"
+                                  name="node_bulk_form[16]"
+                                  value="WyJlbiIsIjIwNSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/platform-scale-500kg"
+                                hreflang="en"
+                                >PLATFORM SCALE 500KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/205/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-17 form-item-node-bulk-form-17 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-17"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-17"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-17"
+                                  name="node_bulk_form[17]"
+                                  value="WyJlbiIsIjIwNCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/hanging-scale-1-ton"
+                                hreflang="en"
+                                >HANGING SCALE 1 TON</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/204/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-18 form-item-node-bulk-form-18 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-18"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-18"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-18"
+                                  name="node_bulk_form[18]"
+                                  value="WyJlbiIsIjIwMyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/hanging-scale-200kg"
+                                hreflang="en"
+                                >HANGING SCALE 200KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/203/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-19 form-item-node-bulk-form-19 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-19"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-19"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-19"
+                                  name="node_bulk_form[19]"
+                                  value="WyJlbiIsIjIwMiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/scale-500kg"
+                                hreflang="en"
+                                >SCALE 500KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/202/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-20 form-item-node-bulk-form-20 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-20"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-20"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-20"
+                                  name="node_bulk_form[20]"
+                                  value="WyJlbiIsIjIwMSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/handling-equipment/weighing-scales/cyt-b3-scale-200kg"
+                                hreflang="en"
+                                >CYT-B3 SCALE 200KG</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Nagata
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/201/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-21 form-item-node-bulk-form-21 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-21"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-21"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-21"
+                                  name="node_bulk_form[21]"
+                                  value="WyJlbiIsIjIwMCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/drum-rollers/rh500"
+                                hreflang="en"
+                                >RH500</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Fastverdini
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/200/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-22 form-item-node-bulk-form-22 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-22"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-22"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-22"
+                                  name="node_bulk_form[22]"
+                                  value="WyJlbiIsIjE5OSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/drum-rollers/rvm350"
+                                hreflang="en"
+                                >RVM350</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Fastverdini
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/199/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-23 form-item-node-bulk-form-23 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-23"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-23"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-23"
+                                  name="node_bulk_form[23]"
+                                  value="WyJlbiIsIjE5OCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/vz55"
+                                hreflang="en"
+                                >VZ55</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Honda
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/198/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-24 form-item-node-bulk-form-24 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-24"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-24"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-24"
+                                  name="node_bulk_form[24]"
+                                  value="WyJlbiIsIjE5NyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/vz35-0"
+                                hreflang="en"
+                                >VZ35</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Honda
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/197/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-25 form-item-node-bulk-form-25 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-25"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-25"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-25"
+                                  name="node_bulk_form[25]"
+                                  value="WyJlbiIsIjE5NiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/ey20-3d"
+                                hreflang="en"
+                                >EY20-3D</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Robin
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/196/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-26 form-item-node-bulk-form-26 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-26"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-26"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-26"
+                                  name="node_bulk_form[26]"
+                                  value="WyJlbiIsIjE5NSJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/vz55-0"
+                                hreflang="en"
+                                >VZ55</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Fastverdini
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/195/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-27 form-item-node-bulk-form-27 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-27"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-27"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-27"
+                                  name="node_bulk_form[27]"
+                                  value="WyJlbiIsIjE5NCJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/vz35"
+                                hreflang="en"
+                                >VZ35</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Fastverdini
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/194/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-28 form-item-node-bulk-form-28 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-28"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-28"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-28"
+                                  name="node_bulk_form[28]"
+                                  value="WyJlbiIsIjE5MyJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/vibrators/rmz"
+                                hreflang="en"
+                                >RMZ</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Fastverdini
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/193/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <div
+                                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-node-bulk-form-29 form-item-node-bulk-form-29 form-no-label"
+                              >
+                                <label
+                                  class="form-check-label"
+                                  for="edit-node-bulk-form-29"
+                                >
+                                  Update this item
+                                </label>
+                                <input
+                                  data-drupal-selector="edit-node-bulk-form-29"
+                                  type="checkbox"
+                                  id="edit-node-bulk-form-29"
+                                  name="node_bulk_form[29]"
+                                  value="WyJlbiIsIjE5MiJd"
+                                  class="form-checkbox form-check-input"
+                                />
+                              </div>
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/products/construction-equipment/power-trowels/tkpt-36a"
+                                hreflang="en"
+                                >TKPT-36A</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              Toku
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                            <td>
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                              <a
+                                href="/node/192/edit?destination=/dashboard/products"
+                                hreflang="en"
+                                >Edit</a
+                              >
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              |
+
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'views_view_field' -->
+                              <!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+                              <!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- END OUTPUT from 'themes/custom/power/templates/views/views-view-table.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__hidden' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--hidden.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        autocomplete="off"
+                        data-drupal-selector="form-sw3-eqq9uaxk283lrqnp1ncp6qjiljtknxycmccv-30"
+                        type="hidden"
+                        name="form_build_id"
+                        value="form-sw3-EQQ9uAXk283lrQnp1NCP6QjiljTknxyCMccV_30"
+                        class="form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__hidden' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--hidden.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        data-drupal-selector="edit-views-form-admin-content-admin-content-form-token"
+                        type="hidden"
+                        name="form_token"
+                        value="dIAm6HfR-Q77OHFjsbjyIrE9PlSb3aUBjhN4utxCo8w"
+                        class="form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__hidden' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--hidden.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        data-drupal-selector="edit-views-form-admin-content-admin-content"
+                        type="hidden"
+                        name="form_id"
+                        value="views_form_admin_content_admin_content"
+                        class="form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'container' -->
+                      <!-- BEGIN OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+                      <!-- THEME DEBUG -->
+                      <!-- THEME HOOK: 'input__submit' -->
+                      <!-- FILE NAME SUGGESTIONS:
+     * input--submit.html.twig
+     x input.html.twig
+  -->
+                      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+                      <input
+                        data-drupal-selector="edit-submit"
+                        type="submit"
+                        id="edit-submit"
+                        name="op"
+                        value="Apply to selected items"
+                        class="button js-form-submit form-submit btn btn-primary form-control"
+                      />
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+                    </form>
+
+                    <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+                  </div>
+                </div>
+
+                <!-- THEME DEBUG -->
+                <!-- THEME HOOK: 'pager' -->
+                <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/navigation/pager.html.twig' -->
+                <nav aria-label="pagination-heading">
+                  <h4 id="pagination-heading" class="visually-hidden">
+                    Pagination
+                  </h4>
+                  <ul class="pagination js-pager__items">
+                    <li class="page-item active">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=1"
+                        title=""
+                        class="page-link"
+                        >2</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=2"
+                        title=""
+                        class="page-link"
+                        >3</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=3"
+                        title=""
+                        class="page-link"
+                        >4</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=4"
+                        title=""
+                        class="page-link"
+                        >5</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=5"
+                        title=""
+                        class="page-link"
+                        >6</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=6"
+                        title=""
+                        class="page-link"
+                        >7</a
+                      >
+                    </li>
+                    <li class="pager__item--next">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=1"
+                        title="Go to next page"
+                        rel="next"
+                        class="page-link"
+                      >
+                        <span aria-hidden="true">Next ›</span>
+                        <span class="visually-hidden">Next page</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        href="?type=All&amp;brand=All&amp;items_per_page=30&amp;page=6"
+                        title="Go to last page"
+                        class="page-link"
+                      >
+                        <span aria-hidden="true">Last »</span>
+                        <span class="visually-hidden">Last page</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/navigation/pager.html.twig' -->
+              </div>
+
+              <!-- END OUTPUT from 'themes/custom/power/templates/views/views-view.html.twig' -->
+
+              <!-- END OUTPUT from 'themes/custom/power/templates/form/container.html.twig' -->
+
+              <!-- END OUTPUT from 'themes/custom/power/templates/block/block--power-content.html.twig' -->
+
+              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
+</html>
+
+<script>
+  const mobileScreen = window.matchMedia("(max-width: 990px )");
+  $(document).ready(function () {
+    $(".dashboard-nav-dropdown-toggle").click(function () {
+      $(this)
+        .closest(".dashboard-nav-dropdown")
+        .toggleClass("show")
+        .find(".dashboard-nav-dropdown")
+        .removeClass("show");
+      $(this).parent().siblings().removeClass("show");
+    });
+    $(".menu-toggle").click(function () {
+      if (mobileScreen.matches) {
+        $(".dashboard-nav").toggleClass("mobile-show");
+      } else {
+        $(".dashboard").toggleClass("dashboard-compact");
+      }
+    });
+  });
+
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      1: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+</script>
